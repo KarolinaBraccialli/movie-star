@@ -23,7 +23,7 @@ require_once 'db.php';
 
 <body>
     <header>
-        <nav id="main-navbar" class="navbar navbar-expand-lg">
+        <nav id="main-navbar" class="navbar navbar-expand-lg p-2">
             <a href="<?= $BASE_URL ?>" class="navbar-brand">
                 <img src="<?= $BASE_URL ?>img/logo.svg" alt="MovieStar" id="logo">
                 <span id="moviestar-title">MovieStar</span>
@@ -31,7 +31,7 @@ require_once 'db.php';
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
-            <form action="<?= $BASE_URL ?>search.php" method="GET" id="search-form" class="form-inline my-2 my-lg-0">
+            <form action="<?= $BASE_URL ?>search.php" method="GET" id="search-form" class="form-inline my-2 my-lg-0 d-flex justify-content-between">
                 <input type="text" name="q" id="search" class="form-control mr-sm-2" type="search" placeholder="Buscar Filmes" aria-label="Search">
                 <button class="btn my-2 my-sm-0" type="submit">
                     <i class="fas fa-search"></i>
@@ -39,7 +39,7 @@ require_once 'db.php';
             </form>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="<?= $BASE_URL ?>newmovie.php" class="nav-link">
                             <i class="far fa-plus-square"></i> Incluir Filme
                         </a>
@@ -53,7 +53,7 @@ require_once 'db.php';
                     </li>
                     <li class="nav-item">
                         <a href="<?= $BASE_URL ?>" class="nav-link">Sair</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a href="<?= $BASE_URL ?>" class="nav-link">Entrar / Cadastrar</a>
                     </li>
@@ -61,8 +61,9 @@ require_once 'db.php';
             </div>
         </nav>
     </header>
+<main id="main-container">
 
-
+</main>
     <footer id="footer">
         <div id="social-container">
             <ul>
