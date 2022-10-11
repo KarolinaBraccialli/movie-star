@@ -2,10 +2,16 @@
 
 require_once 'globals.php';
 require_once 'db.php';
+require_once 'models/Message.php';
 
-// print_r($BASE_URL);
+$message = new Message($BASE_URL);
 
-$flashMessage = [];
+$flashMessage = $message->getMessage();
+
+if(!empty($flashMessage)){
+    //limpar a msg da sessão
+    $message->clearMessage();
+}
 
 ?>
 
